@@ -12,7 +12,7 @@ RUN useradd automation --shell /bin/bash --create-home
 # Install XVFB and TinyWM
 # Install fonts
 RUN apt-get update && \
-    apt-get -y install wget gdebi curl unzip /usr/bin/tinywm && \
+    apt-get -y install wget gdebi curl unzip && \
     apt-get -y install xvfb tinywm && \
     apt-get -y install fonts-ipafont-gothic xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic 
 
